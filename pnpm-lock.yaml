@@ -1,0 +1,17 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .: {}
+
+  packages/mod-a:
+    dependencies:
+      mod-b:
+        specifier: workspace:^
+        version: link:../mod-b
+
+  packages/mod-b: {}
